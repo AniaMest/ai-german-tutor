@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "question": "Ich bleibe zu Hause, ____ ich krank bin.",
+    "options": ["weil", "obwohl", "trotzdem"],
+    "answer": "weil",
+    "explanation": "Weil introduces a reason."
+  },
+  {
+    "question": "Er geht spazieren, ____ es regnet.",
+    "options": ["weil", "obwohl", "damit"],
+    "answer": "obwohl",
+    "explanation": "Obwohl introduces contrast."
+  },
+  {
+    "question": "Ich lerne Deutsch, ____ ich in Deutschland arbeiten möchte.",
+    "options": ["damit", "weil", "trotzdem"],
+    "answer": "damit",
+    "explanation": "Damit expresses purpose."
+  }
+]
