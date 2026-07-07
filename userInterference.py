@@ -8,10 +8,10 @@ def question_display(exercise):
 
 def get_user_answer(option_nums):
     while True:
-        answer = input("Your answer: ")
+        answer = input("\nYour answer: ")
 
         if not answer.isdigit():
-            print("You must enter a number.")
+            print("\nYou must enter a number.")
             continue
 
         answer = int(answer)
@@ -19,14 +19,14 @@ def get_user_answer(option_nums):
         if 1 <= answer <= option_nums:
             return answer
         
-        print("Invalid answer. Try again.")
+        print("\nInvalid answer. Try again.")
 
 def quitting():
     while True:
-        response = input("|Press Enter for next task|\n|or type q to quit|")
+        response = input("\n|Press Enter for next task|\n|or type q to quit|\n")
         
         if response == "":
             return True
         if response == "q":
             return False
-        print("Invalid response.")
+        print("\nInvalid response.")
