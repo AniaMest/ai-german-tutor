@@ -5,8 +5,8 @@ def answer_checker(user_answer, exercise):
     options = exercise["options"]
 
     if options[user_answer - 1] == correct:
-        print("Correct!")
+        print("\nCorrect!")
     else:
-        print("Incorrect.")
-        print("Correct answer:", correct)
+        print("\nIncorrect.")
+        print("\nCorrect answer:", correct)
         print(exercise["explanation"])
