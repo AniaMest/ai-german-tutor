@@ -1,0 +1,16 @@
+.sidebar {
+    width: 240px;
+    padding: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
