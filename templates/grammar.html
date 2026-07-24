@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+Grammar
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/grammar.css') }}">
+
+<h1>Grammar</h1>
+
+<div class="level-grid">
+
+    <a href="{{ url_for('grammar_topics', level='A1') }}"
+   class="level-card active">
+
+        <h2>A1</h2>
+        <p>Available</p>
+
+    </a>
+
+    <div class="level-card locked">
+        <h2>A2</h2>
+        <p>Coming Soon</p>
+    </div>
+
+    <div class="level-card locked">
+        <h2>B1</h2>
+        <p>Coming Soon</p>
+    </div>
+
+    <div class="level-card locked">
+        <h2>B2</h2>
+        <p>Coming Soon</p>
+    </div>
+
+    <div class="level-card locked">
+        <h2>C1</h2>
+        <p>Coming Soon</p>
+    </div>
+
+    <div class="level-card locked">
+        <h2>C2</h2>
+        <p>Coming Soon</p>
+    </div>
+
+</div>
+
+{% endblock %}

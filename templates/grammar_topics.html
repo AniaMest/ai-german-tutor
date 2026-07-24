@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+Grammar Topics
+{% endblock %}
+
+{% block content %}
+
+<div class="topics-layout">
+
+    <section class="topics-page">
+
+        <header class="topics-header">
+            <h1>Grammar Topics</h1>
+        </header>
+
+        <div class="topics-content">
+
+            <h2>{{ selected_level }}</h2>
+
+            {% if topics %}
+
+            <ul>
+
+                {% for topic in topics %}
+
+                <li>{{ topic }}</li>
+
+                {% endfor %}
+
+            </ul>
+
+            {% else %}
+
+            <p>Coming Soon</p>
+
+            {% endif %}
+        </div>
+    </section>
+
+    <aside class="cefr-tabs">
+
+        {% for level in levels %}
+
+        <a
+            href="{{ url_for('grammar_topics', level=level) }}"
+            class="tab {% if level == selected_level %}active{% endif %}">
+
+            {{ level }}
+
+        </a>
+
+        {% endfor %}
+
+    </aside>
+
+</div>
+{% endblock %}

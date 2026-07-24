@@ -1,0 +1,35 @@
+.level-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+    margin-top: 3rem;
+
+}
+
+.level-card {
+
+    border: 1px solid #ccc;
+
+    border-radius: 18px;
+
+    min-height: 170px;
+
+    padding: 2rem;
+
+}
+
+.level-card.active {
+
+    cursor: pointer;
+
+}
+
+.level-card.locked {
+
+    opacity: .5;
+
+}
