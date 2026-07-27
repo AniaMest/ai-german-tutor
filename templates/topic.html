@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ topic_id }}
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ topic.title|safe }}</h1>
+
+<p>Level: {{ level }}</p>
+
+<div class="lesson-intro">
+    <h2>Wann benutzt man diese <strong>kausalen Zusammenhänge</strong>?</h2>
+
+    <p>
+        Wenn wir einen <strong>Grund</strong> für etwas nennen oder erklären möchten.
+    </p>
+
+    <p>
+        Alle vier Ausdrücke bedeuten fast dasselbe,
+        aber die <strong>grammatischen Regeln sind unterschiedlich</strong>.
+    </p>
+
+    <hr>
+
+    <p>
+        <strong>weil</strong>, <strong>da</strong>
+        → Das Verb steht <strong>am Ende</strong>.
+    </p>
+
+    <p>
+        <strong>deshalb</strong>, <strong>deswegen</strong>
+        → Das Verb steht <strong>an zweiter Stelle</strong>.
+    </p>
+
+    <hr>
+
+    <p>
+        <strong>Los geht's – üben wir mal!</strong>
+    </p>
+
+</div>
+
+<details class="grammar-note">
+
+    <summary><em>weil</em></summary>
+
+    <p>
+        Aus Interesse an der deutschen Sprache besuchte
+        Hitomi einen Sprachkurs.
+    </p>
+
+    <p>
+        → <strong>Weil Hitomi Interesse an der deutschen Sprache hatte,
+        besuchte sie einen Sprachkurs.</strong>
+    </p>
+
+</details>
+
+<details class="grammar-note">
+
+    <summary><em>da</em></summary>
+
+    <p>
+        Aufgrund ihres japanischen Hintergrundes hat Hitomi
+        eine andere Sicht.
+    </p>
+
+    <p>
+        → <strong>Da Hitomi einen japanischen Hintergrund hat,
+        hat sie eine andere Sicht auf die Geschichte und das Leben
+        in der Stadt.</strong>
+    </p>
+
+</details>
+
+<details class="grammar-note">
+
+    <summary><em>deshalb</em></summary>
+
+    <p>
+        Die Leute schlafen vor Müdigkeit in der Bahn ein.
+    </p>
+
+    <p>
+        → <strong>Die Leute sind müde, deshalb schlafen sie
+        in der Bahn ein.</strong>
+    </p>
+
+</details>
+
+<details class="grammar-note">
+
+    <summary><em>deswegen</em></summary>
+
+    <p>
+        Dank vieler Reisen nach Österreich war sie
+        mit der Kultur vertraut.
+    </p>
+
+    <p>
+        → <strong>Sie war mit der Kultur vertraut,
+        deswegen reiste sie viel nach Österreich.</strong>
+    </p>
+
+</details>
+
+<a
+    class="start-button"
+    href="{{ url_for(
+            'exercise_page',
+            level=level,
+            topic_id=topic.id
+    ) }}">
+
+    Start
+
+</a>
+
+{% endblock %}

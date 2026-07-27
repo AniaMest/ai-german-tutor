@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+Exercise
+{% endblock %}
+
+{% block content %}
+
+<h1>Exercise</h1>
+
+<h1>{{ exercise.instruction }}</h1>
+
+{% for message in exercise.conversation %}
+
+    <p>
+
+        <strong>{{ message.speaker }}</strong>
+
+        {% for part in message.parts %}
+
+            {% if part is string %}
+
+                {{ part }}
+
+            {% else %}
+
+                <span class="choice-group"
+                    data-answer="{{ part.answer }}">
+
+                {% for choice in part.options %}
+
+                    <span class="choice-word"
+                        data-choice="{{ choice }}">
+                        {{ choice }}
+                    </span>
+
+                    {% if not loop.last %}
+                        /
+                    {% endif %}
+
+                {% endfor %}
+
+            </span>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </p>
+
+{% endfor %}
+
+<button id="check-btn">
+    Check
+</button>
+
+{% endblock %}

@@ -20,15 +20,24 @@ Grammar Topics
 
             {% if topics %}
 
-            <ul>
+            <div class="topics-list">
 
                 {% for topic in topics %}
 
-                <li>{{ topic }}</li>
+                
+                <div class="topic-item">
+                    <a
+                        class="topic-title"
+                        href="{{ url_for('topic_page',
+                                        level=selected_level,
+                                        topic_id=topic.id) }}">
+                        {{ topic.title|safe }}
+                    </a>
+                </div>
 
                 {% endfor %}
 
-            </ul>
+            </div>
 
             {% else %}
 

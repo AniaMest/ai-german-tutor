@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/topics.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lesson.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/exercise.css') }}">
 </head>
 <body>
 
@@ -20,9 +22,22 @@
         ☰
     </button>
 
-    <aside class="sidebar">
-        {% block sidebar %}{% endblock %}
-    </aside>
+        <aside class="sidebar">
+        
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('grammar') }}">Grammar</a>
+                <a href="#">Vocabulary</a>
+                <a href="#">Dictionary</a>
+                <a href="#">My Notes</a>
+                <a href="#">Progress</a>
+                <a href="#">Topics</a>
+                <a href="#">Tutor</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Settings</a>
+            </nav>
+
+        </aside>
 
     <main class="content">
         {% block content %}{% endblock %}
@@ -31,6 +46,7 @@
 </div>
 
 <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+<script src="{{ url_for('static', filename='js/exercise.js') }}"></script>
 
 </body>
 </html>

@@ -1,0 +1,91 @@
+{
+  "id": "weil-da-deshalb-deswegen-01",
+  "type": "inline_choice",
+  "instruction": "Lesen Sie die Beiträge und markieren Sie die richtige Antwort.",
+
+  "conversation": [
+    {
+      "speaker": "Lukas",
+      "parts": [
+        "Hallo Leute, ich fahre nächsten Monat mit Familie nach Wien. Habt ihr Tipps für mich?"
+      ]
+    },
+    {
+      "speaker": "MareikeW",
+      "parts": [
+        "Auf den Kahlenberg gehen! Allein ",
+        {
+          "type": "choice",
+          "options": ["wegen", "deswegen"],
+          "answer": "wegen",
+          "explanation": "\"Wegen\" is a preposition and is followed by a noun phrase."
+        },
+        " der Aussicht lohnt sich der Weg."
+      ]
+    },
+    {
+      "speaker": "Reise_Profi",
+      "parts": [
+        "Schloss Schönbrunn – auch wenn es leider oft sehr voll ist. ",
+        {
+          "type": "choice",
+          "options": ["Denn", "Deshalb"],
+          "answer": "Deshalb",
+          "explanation": "\"Deshalb\" expresses the consequence of the previous sentence."
+        },
+        " sollte man am besten früh am Morgen hingehen."
+      ]
+    },
+    {
+      "speaker": "daVinci",
+      "parts": [
+        "Ich fahre auch bald nach Wien, ",
+        {
+          "type": "choice",
+          "options": ["weil", "darum"],
+          "answer": "weil",
+          "explanation": "\"Weil\" introduces the reason."
+        },
+        " ich mir Bilder von Gustav Klimt ansehen will."
+      ]
+    },
+    {
+      "speaker": "allefahrenweg",
+      "parts": [
+        "Mein Tipp: ein Hotel außerhalb des Zentrums, ",
+        {
+          "type": "choice",
+          "options": ["denn", "daher"],
+          "answer": "denn",
+          "explanation": "\"Denn\" connects two main clauses and gives a reason."
+        },
+        " dort ist es preiswerter."
+      ]
+    },
+    {
+      "speaker": "KaiserKarl",
+      "parts": [
+        {
+          "type": "choice",
+          "options": ["Da", "Denn"],
+          "answer": "Da",
+          "explanation": "\"Da\" introduces a subordinate clause."
+        },
+        " du ja mit deinen Kindern fährst, solltest du in den Prater gehen."
+      ]
+    },
+    {
+      "speaker": "Lilliliest",
+      "parts": [
+        "Ich liebe die Bücher von Thomas Bernhard, ",
+        {
+          "type": "choice",
+          "options": ["deswegen", "denn"],
+          "answer": "deswegen",
+          "explanation": "\"Deswegen\" expresses the consequence."
+        },
+        " gehe ich in Wien immer ins Café Bräunerhof. Dort hat sich der Autor oft aufgehalten, Zeitung gelesen und an seinen Texten gearbeitet."
+      ]
+    }
+  ]
+}

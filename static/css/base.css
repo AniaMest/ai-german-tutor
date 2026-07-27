@@ -13,3 +13,12 @@ body {
     display: flex;
     min-height: 100vh;
 }
+
+.content {
+    flex: 1;
+
+    padding: 40px;
+    margin-left: 28px;
+
+    transition: margin-left .3s ease;
+}

@@ -26,6 +26,30 @@
 
 }
 
+.topics-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-item {
+    border-bottom: 1px solid #d4d4d4;
+    padding: 1rem 2rem;
+}
+
+.topic-header {
+    all: unset;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.topic-item:hover {
+    background-color: #fafafa;
+}
+
 .topics-header {
 
     padding: 2rem 2rem 2rem 8rem;
@@ -89,3 +113,4 @@
     font-weight: bold;
 
 }
+
